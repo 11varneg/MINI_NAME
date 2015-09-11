@@ -1,0 +1,82 @@
+def name_generator_1():
+	import random
+	color = ["MINI", "Lil", "Young", "Smooth", "Grand", "","",""]
+	tool = ["Hammer", "Zippy", "Dylan", "Jeff", "Joy", "King"]
+	randomNumber1 = random.randrange(0,len(color))
+	randomNumber2 = random.randrange(0,len(tool))
+	name = color[randomNumber1] + " " + tool [randomNumber2]
+	print("")
+	print("Your MINI's new nickname is . . ."), name
+	print("")
+	print ("How about another go?")
+	prompt_2()
+	
+	
+def name_generator_2():
+	import random
+	color = ["Fresh", "Lil", "Young", "Smooth", "Grand", "","",""]
+	tool = ["Coop", "Diane", "Rex", "Jane"]
+	randomNumber1 = random.randrange(0,len(color))
+	randomNumber2 = random.randrange(0,len(tool))
+	name = color[randomNumber1] + " " + tool [randomNumber2]
+	print("")
+	print("Your MINI's new nickname is . . ."), name
+	print("")
+	print ("How about another go?")
+	prompt_2()
+	
+		
+def name_generator_3():
+	import random
+	color = ["MINI", "Lil", "Young", "Smooth", "Grand", "","",""]
+	tool = ["Faithful", "Courage", "Samual", "Landshark", "Allister", "Broom"]
+	randomNumber1 = random.randrange(0,len(color))
+	randomNumber2 = random.randrange(0,len(tool))
+	name = color[randomNumber1] + " " + tool [randomNumber2]
+	print("")
+	print("Your MINI's (new) new nickname is . . ."), name
+	print("")
+	print("Share your results!")
+	
+	
+
+def name_generator_4():
+	import random
+	color = ["Fresh", "Lil", "Young", "Smooth", "Grand", "","",""]
+	tool = ["Flip", "Arthur", "Wanda", "Nadine", "Steed", "Clydesdale", "Spot"]
+	randomNumber1 = random.randrange(0,len(color))
+	randomNumber2 = random.randrange(0,len(tool))
+	name = color[randomNumber1] + " " + tool [randomNumber2]
+	print("")
+	print("Your MINI's (new) new nickname is . . ."), name
+	print("")
+	print("Share your results!")
+	
+	
+	
+def prompt():
+	response = raw_input("Generate your MINI's new nickname! What is your nickname? ")
+	x = int(len(response))
+	
+	
+	if  x <= 6:
+		return name_generator_1()
+	elif x >= 7:
+		return name_generator_2()
+	else:
+		print ("Please enter just letters for your nickname!")
+		
+def prompt_2():
+	response = raw_input("What is your favorite food? ")
+	x = int(len(response))
+	
+	
+	if  x <= 6:
+		return name_generator_3()
+	elif x >= 7:
+		return name_generator_4()
+	else:
+		print ("Please enter just letters for your nickname!")
+		
+print ("MINI NAME GEN V_2")
+prompt()
